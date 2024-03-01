@@ -1,5 +1,6 @@
 import { DashboardNav } from "@/components/dashboard-nav";
-import { navItems } from "@/constants/data";
+import { DashboardNavSubmenu } from '../dashboard-nav-submenu';
+import { navItems, navItems2 } from "@/constants/data";
 import { cn } from "@/lib/utils";
 
 export default function Sidebar() {
@@ -14,6 +15,10 @@ export default function Sidebar() {
               Overview
             </h2>
             <DashboardNav items={navItems} />
+            <h2 className="mb-2 pt-10 px-4 text-xl font-semibold tracking-tight">
+              Admin
+            </h2>
+            <DashboardNavSubmenu items={navItems2}></DashboardNavSubmenu>
           </div>
         </div>
       </div>

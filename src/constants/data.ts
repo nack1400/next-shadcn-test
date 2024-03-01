@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { NavItem, SidebarNavItem } from "@/types";
+import { NavItem, SidebarNavItem } from "@/types/index";
 
 export type User = {
   id: number;
@@ -147,5 +147,20 @@ export const navItems: NavItem[] = [
     href: "/",
     icon: "login",
     label: "login",
+  },
+];
+
+export const navItems2 = [
+  {
+    title: 'Dashboard',
+    href: '/dashboard',
+  },
+  {
+    title: 'Settings',
+    href: '/settings',
+    submenu: [
+      { title: 'Profile', href: '/settings/profile' },
+      { title: 'Account', href: '/settings/account' },
+    ],
   },
 ];
